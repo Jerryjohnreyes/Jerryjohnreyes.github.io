@@ -13,6 +13,7 @@
 <body>
     
     <div class="container">
+        <!--NAVIGATION BAR FIXED FOR ALL PAGES-->
         <nav class="navbar navbar-expand-md bg-white row fixed-top">
             <h1 class="navbar-brand col-4 text-white customize_color"><a href="index.html" class= "text-white">Lattitude</a></h1>
             <!--INSERTING A BUTTON FOR CERTAIN SCREEN SIZE-->
@@ -25,7 +26,7 @@
                     <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
                         <div class="dropdown-menu">
                             <a href="vs-maxTemperature.html" class="dropdown-item">Max Temperature</a>
-                            <a href="vs-humidity.html" class="dropdown-item">Humidity</a>
+                            <a href="#" class="dropdown-item">Humidity</a>
                             <a href="vs-cloudiness.html" class="dropdown-item">Cloudiness</a>
                             <a href="vs-windSpeed.html" class="dropdown-item">Wind Speed</a>
                         </div>
@@ -36,65 +37,49 @@
             </div>
         </nav>
 
-
+        <!--THE WEB PAGE MADE INTO TWO COLUMNS-->
         <div class="row justify-content-around">
-            <div class="col-md-6 bg-light box">
+            <div class="col-md-7 bg-light box">
                 <div class="container">
                     <div class="row landing-margin">
-                        <h1>Summary: Latitude Vs. X</h1>
+                        <h1>Humidity</h1>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <img src="images/Fig1.png" alt="">
-                            <p class="text-justify">
-                                The purpose of this project was to analyze how weather changes
-                                as you get closer to the equator. To accomplish this analysis, we
-                                first pulled data from the OpenWeatherMap API to assemble a dataset
-                                on over 500 cities.
-                                After assembling the dataset, we used Matplotlib to plot various
-                                aspects of the weather vs. latitude. Factors we looked at included:
-                                temperature, cloudiness, wind speed, and himidity. This site provides
-                                the source data and visualizations created as part of the analysis, as
-                                well as explanations and descriptions of any trends and correlations witnessed.
-                            </p>
-                        </div>
+                    <div class="row justify-content-center mxTemperature-img">
+                        <img src="images/Fig2.png" alt="" >
+                    </div>
+                    <div class="row downmargin">
+                        <p class="text-justify" >
+                            As you can see in the above image the relationship
+                            between latitude and humidity is null to none existent. Therefore,
+                            what we can set true is that humidity is not a factor that
+                            depends upon latitud, it would be interest to consider altitude.<br>
+                            In fact, absolute humidity is defined as the cocient between the mass
+                            of water vapor and the volumen of the air and water mixture.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 bg-ligth border-strong box">
+            <div class="col-sm-4 bg-ligth border-strong box">
                 <div class="container">
                     <div class="row landing-margin">
-                        <h2>Visualizations</h2>
+                        <h3>Visualizations</h3>
                     </div>
                     <div class="row">
-                        <div class="container ctn-visualizations">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <a href="vs-maxTemperature.html">
-                                        <img src="images/Fig1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-lg-6">
-                                    <a href="vs-humidity.html">
-                                        <img src="images/Fig2.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <a href="vs-cloudiness.html">
-                                        <img src="images/Fig3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-lg-6">
-                                    <a href="vs-windSpeed.html">
-                                        <img src="images/Fig4.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="container vs">
+                            <a href="vs-maxTemperature.html">
+                                <img src="images/Fig1.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/Fig2.png" alt="" class="visualBox">
+                            </a>
+                            <a href="vs-cloudiness.html">
+                                <img src="images/Fig3.png" alt="">
+                            </a>
+                            <a href="vs-windSpeed.html">
+                                <img src="images/Fig4.png" alt="">
+                            </a>
                         </div>
-
                     </div>
                 </div>
             </div>      
